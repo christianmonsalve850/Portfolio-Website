@@ -1,0 +1,36 @@
+.footer-container {
+    padding: 0 4%;
+    border-top: 2px solid #3f3f3f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+.footer-container > p {
+    color: #b5b5b5;
+}
+
+.info-buttons {
+    display: flex;
+}
+
+.developed {
+    flex: 3;
+}
+
+.copyright {
+    flex: 3;
+}
+
+.info-buttons > a {
+    height: 50px;
+    width: 50px;
+    background-color: #3f3f3f;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+}
