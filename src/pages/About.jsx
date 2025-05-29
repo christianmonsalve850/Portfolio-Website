@@ -2,9 +2,12 @@ import '../css/About.css';
 import placeholder from '../assets/placeholder.jpg';
 import { skills } from '../constants/skills';
 import { tools } from '../constants/tools';
+
 import ContributionGraph from '../components/ContributionGraph';
+import { useEffect } from 'react';
 
 function About() {
+    
     return (
         <div className="about-container">
             <div className='left-container'>
@@ -60,7 +63,7 @@ function About() {
                 <img src={placeholder} alt="placeholder" />
                 <div className="images-container">
                     <a href="../public/resume.pdf" target="_blank" className="view-resume-btn">View Resume <i class="fa-solid fa-up-right-from-square fa-xs external-link"></i></a>
-                    <button className="download-resume-btn"><i class="fa-solid fa-arrow-down fa-lg"></i></button>
+                    <a className="download-resume-btn" href='/resume.pdf' download="cm-resume.pdf" title='Download Resume'><i class="fa-solid fa-arrow-down fa-lg"></i></a>
                 </div>
             </div>
         </div>

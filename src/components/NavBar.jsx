@@ -19,7 +19,7 @@ function NavBar() {
                     <li className='navbar-item'><Link className='navbar-link' to="/contact">Contact</Link></li>
                 </ul>
 
-                <button className='toggle'><i class="fa-solid fa-moon moon fa-lg fa-toggle" style={{color: "#1ED760,"}}></i></button>
+                <button className='toggle'><i class="fa-solid fa-moon moon fa-lg fa-toggle" style={{color: "#1ED760"}}></i></button>
             </div>
         </div>
     )
