@@ -1,8 +1,11 @@
 import { useState } from "react";
 import '../css/Contact.css';
-import placeholder from '../assets/techImage.jpg';
+import placeholder from '../assets/placeholder.jpg';
+import { ThemeContext } from "../App";
+import { useContext } from "react";
 
 function Contact() {
+    const { theme, toggleTheme } = useContext(ThemeContext);
 
     const formInitialDetails = {
         first: "",
@@ -55,16 +58,16 @@ function Contact() {
                 <img src={placeholder} alt="placeholder" />
                 <form className="contact-form" onSubmit={handleSubmit}>
                     <div className="text-fields">
-                        <input type="text" placeholder="First Name" id="fname" name="fname" className="text-field" 
+                        <input type="text" placeholder="First Name" id="fname" name="fname" className={`text-field-${theme}`} 
                         value={formDetails.first} onChange={(e) => onFormUpdate('first', e.target.value)}></input>
-                        <input type="text" id="lname" name="lname" placeholder="Last Name" className="text-field"
+                        <input type="text" id="lname" name="lname" placeholder="Last Name" className={`text-field-${theme}`}
                         value={formDetails.last} onChange={(e) => onFormUpdate('last', e.target.value)}></input>
-                        <input type="text" id="email" name="email" placeholder="Email Address" className="text-field"
+                        <input type="text" id="email" name="email" placeholder="Email Address" className={`text-field-${theme}`}
                         value={formDetails.email} onChange={(e) => onFormUpdate('email', e.target.value)}></input>
-                        <input type="text" id="phone-no" name="phone-no" placeholder="Phone No." className="text-field"
+                        <input type="text" id="phone-no" name="phone-no" placeholder="Phone No." className={`text-field-${theme}`}
                         value={formDetails.phone} onChange={(e) => onFormUpdate('phone', e.target.value)}></input>
                     </div>
-                    <textarea name="message" id="message" placeholder="Message" className="text-area"
+                    <textarea name="message" id="message" placeholder="Message" className={`text-area-${theme}`}
                     value={formDetails.message} onChange={(e) => onFormUpdate('message', e.target.value)}></textarea><br />
                     <button className="send-message" type="submit">Send</button>
                 </form>

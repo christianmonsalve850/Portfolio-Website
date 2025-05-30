@@ -3,12 +3,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    color: #FFF;
 }
 
-.main-container {
+.main-container-dark {
     width: 100vw;
     height: 100vh;
     overflow: scroll;
     background: #242424;
+    color: #fff;
 }
+
+.main-container-light {
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    background: #fff;
+    color: #242424;
+}
+
+

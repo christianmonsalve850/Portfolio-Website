@@ -1,9 +1,17 @@
-.navbar {
+.navbar-dark {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background: #3f3f3f;
     padding: 15px 4%;
+    background: #3f3f3f;
+}
+
+.navbar-light {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 4%;
+    background: #bab8b8;
 }
 
 .logo {
@@ -39,6 +47,7 @@ label {
 .navbar-link {
     text-decoration: none;
     transition: all 0.4s;
+    color: inherit;
 }
 
 .navbar-link:hover {
@@ -50,7 +59,7 @@ label {
 .toggle {
     width: 40px;
     height: 40px;
-    background-color: #363636;
+    background-color: inherit;
     border-radius: 50%;
 }
 

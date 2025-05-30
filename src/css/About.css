@@ -9,10 +9,6 @@
     margin-right: 10rem;
 }
 
-.right-container {
-
-}
-
 .main-title {
     font-size: 45px;
     font-family: 'Times New Roman', Times, serif;
@@ -25,7 +21,7 @@ img {
     border-radius: 10%;
 }
 
-.download-resume-btn {
+.download-resume-btn-dark {
     cursor: pointer;
     display: flex;
     width: 60px;
@@ -37,14 +33,30 @@ img {
     align-items: center;
     text-decoration: none;
     border: 2px solid transparent;
+    color: inherit;
 }
 
-.download-resume-btn:hover {
+.download-resume-btn-light {
+    cursor: pointer;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    background-color: #bab8b8;
+    border-radius: 10px;
+    background-size: 75%;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    color: inherit;
+}
+
+.download-resume-btn-dark:hover, .download-resume-btn-light:hover {
     border: 2px solid #707070;
     transition: ease 0.4s;
 }
 
-.view-resume-btn {
+.view-resume-btn-dark {
     display: flex;
     width: 370px;
     height: 60px;
@@ -56,6 +68,22 @@ img {
     align-items: center;
     text-decoration: none;
     border: 2px solid transparent;
+    color: inherit;
+}
+
+.view-resume-btn-light {
+    display: flex;
+    width: 370px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #bab8b8;
+    font-size: 20px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    border: 2px solid transparent;
+    color: inherit;
 }
 
 .external-link {
@@ -74,10 +102,9 @@ button {
 
 button:hover {
     border: 2px solid #707070;
-    transition: ease 0.4s;
 }
 
-.view-resume-btn:hover {
+.view-resume-btn-dark:hover, .view-resume-btn-light:hover {
     border: 2px solid #707070;
     transition: ease 0.4s;
 }
@@ -103,7 +130,7 @@ span {
     padding: 10px;
 }
 
-.skill-block {
+.skill-block-dark {
     display: flex;
     width: 90px;
     height: 90px;
@@ -115,7 +142,19 @@ span {
     margin-bottom: 1rem;
 }
 
-.skill-block:hover {
+.skill-block-light {
+    display: flex;
+    width: 90px;
+    height: 90px;
+    background-color: #bab8b8;
+    border-radius: 10px 30px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.skill-block-dark:hover, .skill-block-light:hover {
     transform: scale(1.07);
     transition: ease 0.4s;
 }

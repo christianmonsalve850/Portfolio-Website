@@ -13,8 +13,14 @@
     font-size: 14px;
 }
 
-.info-buttons {
+.info-buttons-dark {
     display: flex;
+    color: #b5b5b5;
+}
+
+.info-buttons-light {
+    display: flex;
+    color: #9e9c9c;
 }
 
 .developed {
@@ -25,14 +31,28 @@
     flex: 3;
 }
 
-.info-buttons > a {
+.info-buttons-dark > a {
     height: 40px;
     width: 40px;
-    background-color: #3f3f3f;
     margin: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     text-decoration: none;
+    color: inherit;
+    background-color: #3f3f3f;
+}
+
+.info-buttons-light > a {
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    text-decoration: none;
+    color: inherit;
+    background-color: #f4f0f0;
 }
